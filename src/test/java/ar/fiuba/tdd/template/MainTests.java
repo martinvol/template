@@ -17,5 +17,7 @@ public class MainTests {
     @Test
     public void dummy() {
         assertEquals(queue.size(), 0);
+        assertEquals(queue.size(), 1);
+
     }
 }

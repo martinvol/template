@@ -3,29 +3,24 @@ package ar.fiuba.tdd.template;
 /**
  * Created by martin on 8/28/16.
  */
-public class MyQueue<T> implements Queue{
+public class MyQueue<T> implements Queue<T>{
 
-    @Override
     public boolean isEmpty() {
         return true;
     }
 
-    @Override
     public int size() {
         return 0;
     }
 
-    @Override
-    public void add(Object item) {
+    public void add(T item) {
 
     }
 
-    @Override
-    public Object top() {
+    public T top() {
         return null;
     }
 
-    @Override
     public void remove() {
 
     }
