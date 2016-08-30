@@ -1,13 +1,29 @@
 package ar.fiuba.tdd.template;
 
-/**
- * Created by martin on 8/28/16.
- */
-public interface Queue<T> {
+public class MyQueue<T> implements Queue<T>{
 
-    boolean isEmpty();
-    int size();
-    void add(T item); // agregar un item
-    T top(); // retornar el primer item, lanzar exception si esta vacío.
-    void remove(); // remover el primer item, lanzar exception si esta vacío.
+    public Node<T> first = new FirstNode<T>() ;
+
+    public boolean isEmpty() {
+        return first.getPosition() == 0;
+    }
+
+    public int size() {
+        return first.getPosition();
+    }
+
+    public void add(T item) {
+         // FIXME no tengo que meter la cola acá
+        // Tengo que meter otro objeto que tenga público primero
+        // así no queda público el first
+        first.push(new ClassicNode<T>(item), this);
+    }
+
+    public T top() {
+        return first.getNext();
+    }
+
+    public void remove() {
+        first = first.getNextNode();
+    }
 }
