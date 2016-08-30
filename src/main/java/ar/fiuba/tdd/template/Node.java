@@ -1,23 +1,20 @@
 package ar.fiuba.tdd.template;
 
-/**
- * Created by martin on 8/29/16.
- */
 public interface Node<T> {
 
-    public void push(Node<T> nodeToPush, MyQueue<T> queue);
+    void push(Node<T> nodeToPush, Queue<T> queue);
 
-    public T getNext();
+    void push(Node<T> nodeToPush, Node<T> thisNode);
 
-    public int getPosition();
+    T getNext();
 
-    public T getNext(T item);
+    T getNext(T item);
 
-    public void push (Node<T> nodeToPush, Node<T> thisNode);
-
-    public void setNext(Node next);
+    int getPosition();
 
     <T> Node<T> getNextNode();
+
+    void setNext(Node next);
 
     <T> Node<T> getNode();
 }

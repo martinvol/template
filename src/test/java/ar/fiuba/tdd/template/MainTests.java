@@ -2,17 +2,16 @@ package ar.fiuba.tdd.template;
 
 import org.junit.Before;
 import org.junit.Test;
-import java.util.NoSuchElementException;
 
 import static org.junit.Assert.assertEquals;
 
 public class MainTests {
 
-    MyQueue<Integer> queue;
+    Queue<Integer> queue;
 
     @Before
     public void setUp() {
-        queue = new MyQueue<Integer>();
+        queue = new Queue<Integer>();
     }
 
     @Test
@@ -38,13 +37,13 @@ public class MainTests {
 
     }
 
-    @Test(expected=NoSuchElementException.class)
+    @Test(expected = AssertionError.class)
     public void testRemoveFromEmpty() {
         assertEquals(queue.isEmpty(), true);
         queue.remove();
     }
 
-    @Test(expected=NoSuchElementException.class)
+    @Test(expected = AssertionError.class)
     public void testTopFromEmpty() {
         queue.top();
     }

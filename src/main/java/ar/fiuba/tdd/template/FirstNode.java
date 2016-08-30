@@ -1,42 +1,38 @@
 package ar.fiuba.tdd.template;
 
-import java.util.NoSuchElementException;
-
-/**
- * Created by martin on 8/30/16.
- */
 public class FirstNode<T> implements Node<T> {
-    public void push(Node<T> nodeToPush, MyQueue<T> queue){
-        queue.first = nodeToPush;
+
+    public void push(Node<T> nodeToPush, Queue<T> queue) {
+        queue.changeFirst(nodeToPush);
     }
 
-    public T getNext(){
-        throw new NoSuchElementException();
+    public void push(Node<T> nodeToPush, Node<T> thisNode) {
+        throw new IllegalStateException();
     }
 
-    public int getPosition(){
+    public T getNext() {
+        throw new AssertionError();
+    }
+
+    public T getNext(T item) {
+        throw new AssertionError();
+    }
+
+    public int getPosition() {
         return 0;
     }
 
-    public T getNext(T item){
-        throw new NoSuchElementException();
+
+    public void setNext(Node next) {
+        throw new IllegalStateException();
     }
 
-    @Override
-    public void push(Node<T> nodeToPush, Node<T> thisNode) {
-
-    }
-
-    public void setNext(Node next){}
-
-    @Override
     public <T1> Node<T1> getNextNode() {
-        throw new NoSuchElementException();
+        throw new AssertionError();
     }
 
-    @Override
     public <T1> Node<T1> getNode() {
-        return null;
+        throw new IllegalStateException();
     }
 
 
