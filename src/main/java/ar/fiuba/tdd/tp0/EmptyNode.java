@@ -1,4 +1,4 @@
-package ar.fiuba.tdd.TP0;
+package ar.fiuba.tdd.tp0;
 
 
 public class EmptyNode<T> implements Node<T> {
