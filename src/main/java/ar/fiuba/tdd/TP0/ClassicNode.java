@@ -1,4 +1,4 @@
-package ar.fiuba.tdd.template;
+package ar.fiuba.tdd.TP0;
 
 class ClassicNode<T> implements Node<T> {
 

@@ -1,5 +1,5 @@
-# 75.10 Técnicas de Diseño - Template project
- ![Build Status](https://travis-ci.org/7510-tecnicas-de-disenio/template.svg?branch=master) 
+# 75.10 Técnicas de Diseño - TP0
+[![Build Status](https://travis-ci.org/martinvol/template.svg?branch=master)](https://travis-ci.org/martinvol/template)
 
 Template Gradle project
 

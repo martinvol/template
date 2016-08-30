@@ -1,5 +1,6 @@
 package ar.fiuba.tdd.template;
 
+import ar.fiuba.tdd.TP0.Queue;
 import org.junit.Before;
 import org.junit.Test;
 

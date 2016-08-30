@@ -1,4 +1,4 @@
-package ar.fiuba.tdd.template;
+package ar.fiuba.tdd.TP0;
 
 /**
  * Created by martin on 8/28/16.
